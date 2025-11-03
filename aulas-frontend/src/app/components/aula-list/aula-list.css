@@ -1,0 +1,14 @@
+.badge-disponible {
+    background-color: #28a745; /* Verde */
+    color: white;
+}
+
+.badge-mantenimiento {
+    background-color: #ffc107; /* Amarillo */
+    color: #212529; /* Texto oscuro para el fondo claro */
+}
+
+.badge-ocupada {
+    background-color: #dc3545; /* Rojo */
+    color: white;
+}

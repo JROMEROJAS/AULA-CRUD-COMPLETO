@@ -1,0 +1,85 @@
+<div class="container mt-4">
+    <h2>{{ isEdit ? 'Editar' : 'Crear' }} Aula</h2> 
+
+    <form (ngSubmit)="saveAula()" #aulaForm="ngForm">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="codigo" class="form-label">Código del Aula *</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="codigo"
+                    [(ngModel)]="aula.codigo"
+                    name="codigo"
+                    required
+                    [class.is-invalid]="submitted && !aula.codigo.trim()"
+                />
+                <div class="invalid-feedback" *ngIf="submitted && !aula.codigo.trim()">
+                    El código es requerido
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <label for="nsillas" class="form-label">Número de Sillas *</label>
+                <input
+                    type="number"
+                    class="form-control"
+                    id="nsillas"
+                    [(ngModel)]="aula.nsillas"
+                    name="nsillas"
+                    required
+                    min="1"
+                    [class.is-invalid]="submitted && aula.nsillas <= 0"
+                />
+                <div class="invalid-feedback" *ngIf="submitted && aula.nsillas <= 0">
+                    El número de sillas debe ser mayor a 0
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="tipo" class="form-label">Tipo de Aula *</label>
+                <select
+                    class="form-select"
+                    id="tipo"
+                    [(ngModel)]="aula.tipo"
+                    name="tipo"
+                    required
+                    [class.is-invalid]="submitted && !aula.tipo"
+                >
+                    <option *ngFor="let tipo of tipos" [value]="tipo.value">{{ tipo.label }}</option>
+                </select>
+                <div class="invalid-feedback" *ngIf="submitted && !aula.tipo">
+                    El tipo es requerido
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <label for="estado" class="form-label">Estado *</label>
+                <select
+                    class="form-select"
+                    id="estado"
+                    [(ngModel)]="aula.estado"
+                    name="estado"
+                    required
+                    [class.is-invalid]="submitted && !aula.estado"
+                >
+                    <option *ngFor= "let estado of estados" [value]="estado.value">{{ estado.label }}</option>
+                </select>
+                <div class="invalid-feedback" *ngIf="submitted && !aula.estado">
+                    El estado es requerido
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-success me-2">
+                {{ isEdit ? 'Actualizar' : 'Crear' }} Aula
+            </button>
+            <button type="button" class="btn btn-secondary" (click)="cancel()">
+                Cancelar
+            </button>
+        </div>
+    </form>
+</div>
