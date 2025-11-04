@@ -10,26 +10,26 @@ Sistema completo de gestión de aulas universitarias desarrollado con arquitectu
 ## 🚀 Características
 
 ### Backend (Spring Boot)
-- ✅ **API REST** completa con Spring Boot 3.x
-- ✅ **Persistencia** con JPA/Hibernate y MySQL
-- ✅ **Validación** de datos y manejo de excepciones
-- ✅ **Configuración CORS** para integración con frontend
-- ✅ **Arquitectura en capas** (Controller, Service, Repository)
+-  **API REST** completa con Spring Boot 
+-  **Persistencia** con JPA/Hibernate y MySQL
+-  **Validación** de datos y manejo de excepciones
+-  **Configuración CORS** para integración con frontend
+-  **Arquitectura en capas** (Controller, Service, Repository)
 
 ### Frontend (Angular)
-- ✅ **Interfaz moderna** con Angular 17 y Bootstrap
-- ✅ **Componentes reactivos** y formularios validados
-- ✅ **Gestión de estado** con servicios observables
-- ✅ **Routing** y navegación entre vistas
-- ✅ **Responsive design** para diferentes dispositivos
+-  **Interfaz moderna** con Angular 17 y Bootstrap
+-  **Componentes reactivos** y formularios validados
+-  **Gestión de estado** con servicios observables
+-  **Routing** y navegación entre vistas
+-  **Responsive design** para diferentes dispositivos
 
 ### Funcionalidades CRUD
-- 👁️ **Visualizar** listado de aulas con filtros
-- ➕ **Crear** nuevas aulas con validación
-- ✏️ **Editar** información de aulas existentes
-- 🗑️ **Eliminar** aulas con confirmación
-- 🔍 **Filtrar** por tipo y estado
-- 📱 **Interfaz intuitiva** y user-friendly
+-  **Visualizar** listado de aulas con filtros
+-  **Crear** nuevas aulas con validación
+-  **Editar** información de aulas existentes
+-  **Eliminar** aulas con confirmación
+-  **Filtrar** por tipo y estado
+-  **Interfaz intuitiva** y user-friendly
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -45,7 +45,6 @@ Sistema completo de gestión de aulas universitarias desarrollado con arquitectu
 - **Angular 17** - Framework frontend
 - **TypeScript** - Lenguaje de programación
 - **Bootstrap 5** - Framework CSS
-- **RxJS** - Programación reactiva
 - **HTML5/CSS3** - Marcado y estilos
 
 ## 📁 Estructura del Proyecto
