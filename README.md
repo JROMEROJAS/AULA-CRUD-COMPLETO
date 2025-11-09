@@ -3,7 +3,6 @@
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.7-brightgreen)](https://spring.io/)
 [![Angular](https://img.shields.io/badge/Angular-17+-red)](https://angular.io/)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-blue)](https://www.mysql.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 Sistema completo de gestión de aulas universitarias desarrollado con arquitectura full-stack. Permite administrar aulas, sus características y estados de disponibilidad.
 
